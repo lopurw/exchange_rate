@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    padding-top: 150px;
+}
+
+.str1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.fetch-example {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.currency-box {
+    margin-top: 20px;
+}
+
+.currency-row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency-info {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.conventer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input_div,
+.eur_div,
+.usd_div {
+    margin-top: 20px;
+}
+
+.input_div p,
+.eur_div p,
+.usd_div p {
+    margin: 0;
+}
+
+.input_div input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input_div input:focus {
+    outline: none;
+    border-color: dodgerblue;
+}
+
+.eur,
+.usd {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.eur h1,
+.usd h1 {
+    margin: 0;
+}
+
+/* Анимация */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.currency-row,
+.input_div,
+.eur_div,
+.usd_div {
+    animation: fade-in 0.5s ease;
+}
